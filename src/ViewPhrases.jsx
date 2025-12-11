@@ -4,33 +4,41 @@ import "../src/ViewPhrases.css"
 
 
 const ViewPhrases = () => {
-    console.log(phrases);
 
-    /*const [paragraph, setParagraph] = useState ("I am my own sanctuary and I can be reborn as many times as I choose throughout my life.")
-    const [author, setAuthor] = useState ("Lady Gaga")
+const [index, setIndex] = useState(0);
 
-    function ChangePhrase () {
-        
-    }
+  const ShowNext = () => {
+    setIndex((prevIndex) =>
+      prevIndex === phrases.length - 1 ? 0 : prevIndex + 1
+    );
+  };
 
-    function ChangeAuthor () {
-    */
+  const ShowPrevious = () => {
+    setIndex((prevIndex) =>
+      prevIndex === 0 ? phrases.length - 1 : prevIndex - 1
+    );
+  };
 
+  const current = phrases[index];
          
     return (
-        <div className="container">
-        {
-            phrases.map(index => (
-                <div key={index.id} className="otherClass">
-                    <p>{index.phrase}</p>
-                    <p>{index.author}</p>
+        <> <div className="viewContainer">
+                <div>
+                    <button className="viewButtons" onClick={ShowPrevious}> &#060;</button>
                 </div>
-            ))
-        }
-        </div>
-
+                <div>
+                    <img src={current.photo} alt={current.name} className="viewPhoto"/>
+                </div>
+                <div key={current.phrase} className="viewInfo">
+                        <p className="viewPhrase">{current.phrase}</p>
+                        <p className="viewAuthor">{current.name}</p>
+                </div>
+                <div>
+                    <button className="viewButtons" onClick={ShowNext}> &#062; </button>
+                </div>
+            </div>
+        </>
     )
-
 };
 
 export default ViewPhrases
