@@ -245,3 +245,4 @@ const phrases = [
     },
 ]
 
+export {phrases}
