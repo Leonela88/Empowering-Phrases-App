@@ -3,6 +3,11 @@ const phrases = [
      role : "American Journalist & Social-political Activist",
      phrase :"Don't think about making women fit the world - think about making the world fit women."
     },
+
+    {name : "Lady Gaga",
+    role : "Singer-songwriter & Musician",
+    phrase : "I am my own sanctuary and I can be reborn as many times as I choose throughout my life."
+    },
     
     {name : "Ruth Bader Ginsburg",
      role : "American Lawyer and Jurist",
