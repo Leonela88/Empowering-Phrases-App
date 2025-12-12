@@ -84,7 +84,7 @@ p {
     opacity: 1;
     font-size: 3vmin;
     padding-bottom: 0;
-    font-family: inter;
+    font-family: "Inter", sans-serif;
 
 }
 
@@ -93,4 +93,6 @@ p {
     font-size: 80%;
     font-size: 3vmin;
     padding-top: 0;
+        font-family: "Inter", sans-serif;
 }
+
