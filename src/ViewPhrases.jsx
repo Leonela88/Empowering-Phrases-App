@@ -24,17 +24,17 @@ const [index, setIndex] = useState(0);
     return (
         <> <div className="viewContainer">
                 <div>
-                    <button className="viewButtons" onClick={ShowPrevious}> &#060;</button>
-                </div>
-                <div>
                     <img src={current.photo} alt={current.name} className="viewPhoto"/>
                 </div>
-                <div key={current.phrase} className="viewInfo">
-                        <p className="viewPhrase">{current.phrase}</p>
-                        <p className="viewAuthor">{current.name}</p>
-                </div>
-                <div>
-                    <button className="viewButtons" onClick={ShowNext}> &#062; </button>
+                <div className="carousel">
+                  <button className="viewButtons" id="box1" onClick={ShowPrevious}> &#060;</button>
+                  <div key={current.phrase} className="viewInfo" id="box2">
+                          <p className="viewPhrase">{current.phrase}</p>
+                          <p className="viewAuthor">{current.name}</p>
+                  </div>
+                  <div>
+                      <button className="viewButtons" id="box3" onClick={ShowNext}> &#062; </button>
+                  </div>
                 </div>
             </div>
         </>
