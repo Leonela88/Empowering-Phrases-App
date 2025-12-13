@@ -29,6 +29,7 @@ const [index, setIndex] = useState(0);
                 <div className="carousel">
                   <button className="viewButtons" id="box1" onClick={ShowPrevious}> &#060;</button>
                   <div key={current.phrase} className="viewInfo" id="box2">
+                          <img src="./quotes.png" alt="quote icon" className="quoteIcon"></img>
                           <p className="viewPhrase">{current.phrase}</p>
                           <p className="viewAuthor">{current.name}</p>
                   </div>

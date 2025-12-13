@@ -21,13 +21,13 @@
 .viewButtons {
     display: flex;
     flex-direction: column;
-    background-color: rgba(206, 161, 248, 0.3);
+    background-color: rgb(240,230,239);
     border-radius: 100px;
     align-items: center;
     margin: 50px;
-    border: none;
     width: 500px;
     height: 1000px;
+    border: 1px outset rgb(84, 54, 112);
 
 }
 
@@ -56,21 +56,27 @@
     background-color: rgb(206, 161, 248);
 }
 
-
-
 .viewInfo {
     display: flex;
     flex-direction: column;
-    background-color: rgba(206, 161, 248, 1);
+    background-color: rgb(240,230,239);
     border-radius: 100px;
     align-items: center;
     margin: 50px;
-    border: none;
+    border: 1px outset rgb(84, 54, 112);
     width: 2000px;
     height: 1000px;
     box-shadow: 5px 5px 0px 0px rgb(84, 54, 112); 
     z-index: 2;
 
+}
+
+.quoteIcon {
+    width: 200px;
+    align-self: flex-start;
+    position: relative;
+    left: 100px;
+    top: 50px;
 }
 
 .viewInfo:hover {
