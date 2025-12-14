@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import ViewPhrases from './ViewPhrases'
 import RemovePhrases from './RemovePhrases'
+import CreateReadActions from './CreateReadActions'
 
 
 function App() {
@@ -11,6 +12,7 @@ return (
       <Header></Header>
       <main className="app-main">
         <ViewPhrases></ViewPhrases>
+        <CreateReadActions></CreateReadActions>
         <RemovePhrases></RemovePhrases>
       </main>
       <Footer></Footer>
