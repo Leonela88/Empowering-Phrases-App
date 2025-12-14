@@ -9,6 +9,12 @@
 
     --font-family-primary:'Inter';
     --font-family-quotes: 'Merriweather';
+
+    --spacing-xs: 4px;
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --border-radius-default: 12px;
 }
 
 * {
@@ -22,5 +28,5 @@ body{
     font-family: var(--font-family-primary);
     color: rgba(var(--rgb-text), 1);
     min-height: 100vh;
+    padding-top: var(--spacing-m);
 }
-
