@@ -1,19 +1,21 @@
-import { useState } from 'react'
 import './App.css'
+import Header from './Header'
+import Footer from './Footer'
 import ViewPhrases from './ViewPhrases'
 import RemovePhrases from './RemovePhrases'
-import Header from './Header'
+
 
 function App() {
 return (
-    <>
-    <Header></Header>
-    <ViewPhrases></ViewPhrases>
-    <RemovePhrases></RemovePhrases>
-    </>
+    <div className="App">
+      <Header></Header>
+      <main className="app-main">
+        <ViewPhrases></ViewPhrases>
+        <RemovePhrases></RemovePhrases>
+      </main>
+      <Footer></Footer>
+    </div>
   )
 }
 
 export default App
-
-
