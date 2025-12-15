@@ -6,10 +6,13 @@
     width: 50%;
     max-width: 3500px;
     max-height: 100%;
-    min-width: 50vw;
-    min-width: 50vw;
+    min-width: 20vw;
+    min-height: auto;
     position: fixed;
     bottom: 0;
+    left: 0;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 
 .carousel {
@@ -18,17 +21,17 @@
     left: 45%;
     top: 30%;
 }
+
 .viewButtons {
     display: flex;
     flex-direction: column;
-    background-color: rgb(240,230,239);
+    background-color:#F0E6EF;;
     border-radius: 100px;
     align-items: center;
     margin: 50px;
     width: 500px;
-    height: 1000px;
+    height: 1500px;
     border: 1px outset rgb(84, 54, 112);
-
 }
 
 #box1 {
@@ -37,7 +40,6 @@
     top: 30px;
     box-shadow: 5px 5px 0px 0px rgb(84, 54, 112); 
     z-index: 1;
-
 }
 
 #box3 {
@@ -48,29 +50,6 @@
     z-index: 1;
 }
 
-#box3:hover {
-    background-color: rgb(206, 161, 248);
-}
-
-#box1:hover {
-    background-color: rgb(206, 161, 248);
-}
-
-.viewInfo {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(240,230,239);
-    border-radius: 100px;
-    align-items: center;
-    margin: 50px;
-    border: 1px outset rgb(84, 54, 112);
-    width: 2000px;
-    height: 1000px;
-    box-shadow: 5px 5px 0px 0px rgb(84, 54, 112); 
-    z-index: 2;
-
-}
-
 .quoteIcon {
     width: 200px;
     align-self: flex-start;
@@ -79,26 +58,111 @@
     top: 50px;
 }
 
-.viewInfo:hover {
-    background-color: rgb(170, 99, 236);
+.viewInfo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #F0E6EF;
+    border-radius: 100px;
+    align-items: center;
+    margin: 50px;
+    border: 1px outset rgb(84, 54, 112);
+    width: 35vw;
+    height: 1500px;
+    box-shadow: 5px 5px 0px 0px rgb(84, 54, 112); 
+    z-index: 2;
 }
 
-p {
-    padding: 50px;
-}
 .viewPhrase {
     opacity: 1;
-    font-size: 3vmin;
-    padding-bottom: 0;
+    font-size: clamp(6.5rem, 2vw, 2rem);
     font-family: "Inter", sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+}
 
+hr {
+    border-bottom: 15px solid #9C89B8;
+    margin-top: 250px;
+    position: absolute;
+    bottom: 350px;
+    width: 85%;
 }
 
 .viewAuthor {
+    position: absolute;
+    bottom: 0px;
     align-self: flex-end;
     font-size: 80%;
     font-size: 3vmin;
-    padding-top: 0;
-        font-family: "Inter", sans-serif;
+    font-size: 2vmax;
+    margin-top: 150px;
+    font-family: "Inter", sans-serif;
+    padding-right: 75px;
 }
 
+
+.viewInfo:hover {
+    background-color: rgb(218, 204, 231);
+}
+#box3:hover {
+    background-color: rgb(206, 161, 248);
+}
+#box1:hover {
+    background-color: rgb(206, 161, 248);
+}
+
+/*
+
+@media (max-width: 600px) {
+    .viewContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .viewPhoto {
+    position: fixed;
+    bottom: 0;
+    justify-self: center;
+    }
+
+    .carousel {
+        align-self: center;
+        justify-self: center;
+    }
+}
+@media (min-width: 600px) {
+    .viewContainer {
+    display: flex;
+    flex-direction: column;
+    }
+    .viewPhoto {
+    position: fixed;
+    bottom: 0;
+    justify-self: center;
+    }
+
+    .carousel {
+    position: fixed;
+    top: 20vw;
+    right: 20vw;
+
+    }
+@media (max-width: 600px) {
+    .viewInfo 
+}
+@media (min-width: 600px) {
+    ...
+}
+@media  (min-width: 768px) {
+    ...
+}
+@media  (min-width: 992px) {
+    ...
+}
+@media (min-width: 1200px) {
+    ...
+}
+}
+
+*/
