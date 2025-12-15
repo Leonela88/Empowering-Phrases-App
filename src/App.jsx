@@ -1,14 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './Header'
+import Footer from './Footer'
 import ViewPhrases from './ViewPhrases'
+import RemovePhrases from './RemovePhrases'
+import CreateReadActions from './CreateReadActions'
+
 
 function App() {
 return (
-    <>
-    <ViewPhrases></ViewPhrases>
-    </>
+    <div className="App">
+      <Header></Header>
+      <main className="app-main">
+        <ViewPhrases></ViewPhrases>
+        {/* <CreateReadActions></CreateReadActions> */}
+        <RemovePhrases></RemovePhrases>
+      </main>
+      <Footer></Footer>
+    </div>
   )
 }
 
