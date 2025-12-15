@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import styles from './NewPhraseForm.module.css'
 
 const NewPhraseForm = () => {
 
@@ -8,34 +9,61 @@ const NewPhraseForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-  console.log('Nueva Frase Creada:', { phrase, author});
-  setPhrase('');
-  setAuthor('');
+    console.log('Nueva Frase Creada:', { phrase, author });
+    setPhrase('');
+    setAuthor('');
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h3>✍️ EmpowerUs with your own Phrase</h3>
-      <div>
-        <label htmlFor="phrase">Phrase:</label>
-        <textarea
-          id="phrase"
-          value={phrase}
-          onChange={(e) => setPhrase(e.target.value)}
-          rows="4"
-        ></textarea>
+    <div className={styles.container}>
+
+      <div className={styles.img}>
+       
       </div>
-      <div>
-        <label htmlFor="author">Autor:</label>
-        <input
-          type="text"
-          id="author"
-          value={author} 
-         onChange={(e) => setAuthor(e.target.value)}
-        />
-      </div>
-      <button type="submit">Save Phrase</button>
-    </form>
+
+      <form onSubmit={handleSubmit} >
+
+       
+        <div className={styles.phrasePanel}>
+          <span className={styles.quoteMark}>&ldquo;</span>
+
+          <textarea
+            id="phrase"
+            value={phrase}
+            onChange={(e) => setPhrase(e.target.value)}
+            rows="4"
+            placeholder="Please enter your phrase."
+          ></textarea>
+
+     
+          <div className={styles.authorContainer}>
+            <div className={styles.authorLine}></div>
+            <input
+              type="text"
+              id="author"
+              value={author}
+              onChange={(e) => setAuthor(e.target.value)}
+              placeholder="Enter the author."
+            />
+          </div>
+        </div>
+
+        
+        <div className={styles.footer}>
+          <p>
+            Thank you for your contribution and for continuing to grow the
+            community of women who empower and inspire other women.
+            Please review that all fields have been filled in correctly and
+            press the verify button.
+          </p>
+
+         
+          <button type="submit" className={styles.verifyButton}>
+            <span className={styles.checkIcon}>&#10003;</span> 
+          </button>
+        </div>
+      </form>
+    </div>
   );
 };
 
