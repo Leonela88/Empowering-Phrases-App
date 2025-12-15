@@ -1,116 +1,69 @@
 .viewContainer {
+    border: 2px solid black;
     display: flex;
+    margin: auto;
 }
 
 .viewPhoto {
     width: 50%;
-    max-width: 3500px;
-    max-height: 100%;
-    min-width: 20vw;
-    min-height: auto;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    flex-shrink: 1;
-    flex-grow: 1;
+    min-width: 600px;
+    height: auto;
 }
 
 .carousel {
     display: flex;
-    position: fixed;
-    left: 45%;
-    top: 30%;
+    width: 50%;
 }
 
 .viewButtons {
-    display: flex;
-    flex-direction: column;
-    background-color:#F0E6EF;;
-    border-radius: 100px;
-    align-items: center;
-    margin: 50px;
-    width: 500px;
-    height: 1500px;
-    border: 1px outset rgb(84, 54, 112);
-}
-
-#box1 {
-    position: relative;
-    left: 350px;
-    top: 30px;
-    box-shadow: 5px 5px 0px 0px rgb(84, 54, 112); 
-    z-index: 1;
-}
-
-#box3 {
-    position: relative;
-    right: 350px;
-    top: 30px;
-    box-shadow: 5px 5px 0px 0px rgb(84, 54, 112); 
-    z-index: 1;
+    background-color: none;
+    color: #9C89B8;
+    font-weight: bolder;
 }
 
 .quoteIcon {
-    width: 200px;
     align-self: flex-start;
-    position: relative;
-    left: 100px;
-    top: 50px;
+    width: 20%;
+    margin: 15px;
+
 }
 
 .viewInfo {
-    position: relative;
     display: flex;
     flex-direction: column;
     background-color: #F0E6EF;
-    border-radius: 100px;
-    align-items: center;
+    border-radius: 30px;
     margin: 50px;
-    border: 1px outset rgb(84, 54, 112);
-    width: 35vw;
-    height: 1500px;
-    box-shadow: 5px 5px 0px 0px rgb(84, 54, 112); 
-    z-index: 2;
+    width: 600px;
+    height: auto;
+
 }
 
 .viewPhrase {
     opacity: 1;
-    font-size: clamp(6.5rem, 2vw, 2rem);
     font-family: "Inter", sans-serif;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 
 hr {
-    border-bottom: 15px solid #9C89B8;
-    margin-top: 250px;
-    position: absolute;
-    bottom: 350px;
+    border-bottom: 5px solid #9C89B8;
+    margin: 25px;
     width: 85%;
 }
 
 .viewAuthor {
-    position: absolute;
-    bottom: 0px;
     align-self: flex-end;
-    font-size: 80%;
-    font-size: 3vmin;
-    font-size: 2vmax;
-    margin-top: 150px;
     font-family: "Inter", sans-serif;
-    padding-right: 75px;
-}
+    margin-right: 20px;
 
+}
 
 .viewInfo:hover {
     background-color: rgb(218, 204, 231);
 }
-#box3:hover {
-    background-color: rgb(206, 161, 248);
-}
-#box1:hover {
-    background-color: rgb(206, 161, 248);
-}
+
 
 /*
 
