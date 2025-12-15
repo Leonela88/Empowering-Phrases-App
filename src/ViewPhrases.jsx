@@ -30,7 +30,10 @@ const [index, setIndex] = useState(0);
                   <button className="viewButtons" id="box1" onClick={ShowPrevious}> &#060;</button>
                   <div key={current.phrase} className="viewInfo" id="box2">
                           <img src="./quotes.png" alt="quote icon" className="quoteIcon"></img>
-                          <p className="viewPhrase">{current.phrase}</p>
+                          <div className="fitPhrase">
+                            <p className="viewPhrase">{current.phrase}</p>
+                          </div>
+                          <hr></hr>
                           <p className="viewAuthor">{current.name}</p>
                   </div>
                   <div>
