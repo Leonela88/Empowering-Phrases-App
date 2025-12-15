@@ -12,7 +12,7 @@ return (
       <Header></Header>
       <main className="app-main">
         <ViewPhrases></ViewPhrases>
-        <CreateReadActions></CreateReadActions>
+        {/* <CreateReadActions></CreateReadActions> */}
         <RemovePhrases></RemovePhrases>
       </main>
       <Footer></Footer>
