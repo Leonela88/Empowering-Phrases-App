@@ -11,9 +11,9 @@ return (
     <div className="App">
       <Header></Header>
       <main className="app-main">
-        <ViewPhrases></ViewPhrases>
+        {/* <ViewPhrases></ViewPhrases> */}
         {/* <CreateReadActions></CreateReadActions> */}
-        <RemovePhrases></RemovePhrases>
+        {/* <RemovePhrases></RemovePhrases> */}
       </main>
       <Footer></Footer>
     </div>
