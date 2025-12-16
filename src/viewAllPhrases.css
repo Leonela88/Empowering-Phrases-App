@@ -1,0 +1,58 @@
+.view-all-phrases-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-xxl) var(--spacing-l) var(--spacing-xxl) var(--spacing-l);
+}
+
+.view-all-phrases-title {
+    font-size: 1.8rem;
+    color: rgba(var(--rgb-primary), 1);
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: var(--spacing-l);
+}
+
+.view-all-phrases-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.table-header-row {
+    background-color: rgba(var(--rgb-primary), 0.05);
+    border-bottom: 2px solid rgba(var(--rgb-primary), 1);
+}
+
+.table-header {
+    padding: var(--spacing-m) var(--spacing-s);
+    text-align: left;
+    color: rgba(var(--rgb-primary), 1);
+    font-size: 1.0rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.table-data-row {
+    border-bottom: 1px solid rgba(var(--rgb-secondary), 0.2);
+}
+
+.table-data {
+    padding: var(--spacing-l) var(--spacing-s);
+    text-align: left;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    vertical-align: top;
+    color: rgba(var(--rgb-secondary), 1);
+}
+
+.author-col {
+    width: 20%;
+}
+
+.category-col {
+    width: 25%;
+}
+
+.phrase-col {
+    width: 55%;
+}
