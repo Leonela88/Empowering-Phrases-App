@@ -20,7 +20,7 @@ const ViewPhrases = () => {
   const current = phrases[index];
 
   return (
-    <div className="viewContainer">
+    <main className="viewContainer">
       <div className="ViewphotoFrame">
         <img src={current.photo} alt={current.name} className="viewPhoto" />
       </div>
@@ -46,7 +46,7 @@ const ViewPhrases = () => {
         <button className="viewButtons" onClick={ShowNext}>&#062;
         </button>
       </div>
-    </div>
+    </main>
   );
 };
 

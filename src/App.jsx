@@ -1,21 +1,22 @@
-import './App.css'
-import Header from './Header'
-import Footer from './Footer'
-import ViewPhrases from './ViewPhrases'
-import RemovePhrases from './RemovePhrases'
-import CreateReadActions from './CreateReadActions'
-
+import "./App.css";
+import Header from "./Header";
+import Footer from "./Footer";
+import ViewPhrases from "./ViewPhrases";
+// import RemovePhrases from './RemovePhrases'
+// import CreateReadActions from './CreateReadActions'
+// import NewPhraseForm from './components/NewPhraseForm'
 
 function App() {
-return (
+  return (
     <div className="App">
       <Header></Header>
-      <ViewPhrases></ViewPhrases>
-        <CreateReadActions></CreateReadActions>
-        <RemovePhrases></RemovePhrases>
+        <ViewPhrases></ViewPhrases>
+        {/* {< NewPhraseForm></NewPhraseForm>} */}
+        {/* <CreateReadActions></CreateReadActions> */}
+        {/* <RemovePhrases></RemovePhrases> */}
       <Footer></Footer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
