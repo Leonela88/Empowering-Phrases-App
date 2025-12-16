@@ -6,8 +6,8 @@ const NewPhraseForm = () => {
   const [phrase, setPhrase] = useState('');
   const [author, setAuthor] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
     console.log('Nueva Frase Creada:', { phrase, author });
     setPhrase('');
