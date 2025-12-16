@@ -21,7 +21,7 @@ const ViewPhrases = () => {
 
   return (
     <div className="viewContainer">
-      <div>
+      <div className="ViewphotoFrame">
         <img src={current.photo} alt={current.name} className="viewPhoto" />
       </div>
       <div className="carousel">
@@ -33,6 +33,14 @@ const ViewPhrases = () => {
             <p className="viewPhrase">{current.phrase}</p>
           </div>
           <hr></hr>
+          <div className="buttons">
+            <button className="viewModificar">
+              <img src="../public/images/pencil.png" alt="pencil icon" id="viewPencil" />
+            </button>
+            <button className="viewDelete">
+              <img src="../public/images/trash.png" alt="bin icon" id="viewBin" />
+            </button>
+          </div>
           <p className="viewAuthor">{current.name}</p>
         </div>
         <button className="viewButtons" onClick={ShowNext}>&#062;
@@ -41,5 +49,17 @@ const ViewPhrases = () => {
     </div>
   );
 };
+
+// function ManageOverflow() {
+//   const phraseElement = document.querySelector('.viewPhrase');
+
+//   if ($("phraseElement").height() > $(".fitPhrase").height())
+//      {
+//       result = phraseElement.style.fontSize = "1.5rem";
+//     }
+
+//      }
+
+// ManageOverflow();
 
 export default ViewPhrases;

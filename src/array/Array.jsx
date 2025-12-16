@@ -107,12 +107,6 @@ const phrases = [
          photo : "./photos/G.D.-Anderson.png"
     },
 
-    {name : "Jameela Jamil", 
-     role : "Actress & Activist",
-     phrase : "Do not ever sell yourself short.",
-         photo : "./photos/Jameela-Jamil.png"
-    },
-
     {name : "Jane Goodall", 
      role : "Primatologist & Anthropologist",
      phrase : "One individual cannot possibly make a difference, alone. It is individual efforts, collectively, that makes a noticeable difference - all the difference in the world!",
