@@ -8,7 +8,7 @@ const Header = () => {
                 <h1 className="header-title">Empowered Women Empower Women</h1>
                 <img
                     src={logoPath}
-                    alt="Logo flor de Loto y Megafono"
+                    alt="Logo flor de Loto y siluetas rostros"
                     className="header-logo"
                 />
             </div>
