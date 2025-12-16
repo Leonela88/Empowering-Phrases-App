@@ -1,81 +1,104 @@
-/* src/Header.css */
-
 .app-header {
     background-color: rgba(var(--rgb-secondary), 1);
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 100;
-    padding: var(--spacing-s) 0;
+    padding: 0;
 }
 
 .header-content {
     display: flex;
     align-items: center;
-    padding: 0 140px 0 var(--spacing-l);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-l);
 }
 
 .header-title {
     color: rgba(var(--rgb-primary), 1);
     font-size: 2.2rem;
-    margin: 0 auto;
     flex-grow: 1;
     text-align: center;
-    z-index: 10;
-    position: relative;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .header-logo {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 130px;
+    height: 120px;
     width: auto;
+    flex-shrink: 0;
+    margin-left: var(--spacing-l);
 }
 
-/* Media Query */
-@media (max-width: 767px) {
+/* Media Query, rango base Desktop Estándar >=993 */
+/*Tablet Estándar*/
+@media (width <= 992px) {
     .app-header {
-        padding: var(--spacing-s) 0;
+        padding: 0;
     }
     .header-content {
-        padding: 0 105px 0 var(--spacing-m);
+        padding: 0 var(--spacing-m);
     }
     .header-title {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        text-align: center;
     }
     .header-logo {
-        height: 95px;
+        height: 90px;
+        margin-left: var(--spacing-m);
     }
 }
-
-@media (max-width: 575px) {
+/*Tablet Pequeña / Móvil Horizontal*/
+@media (width <= 767px) and (width > 576px) {
     .app-header {
-        padding: var(--spacing-xs) 0;
+        padding:0;
     }
     .header-content {
-        padding: 0 60px 0 var(--spacing-s);
+        padding: 0 var(--spacing-m);
     }
     .header-title {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
     }
     .header-logo {
-        height: 50px;
+        height: 90px;
+        margin-left: var(--spacing-m);
     }
 }
-
-@media (max-width: 400px) {
+/*Móvil Estándar*/
+@media (width <= 576px) {
+    .app-header {
+        padding: 0;
+    }
     .header-content {
-        padding: 0 45px 0 var(--spacing-s);
+        padding: 0 var(--spacing-s);
+    }
+    .header-title {
+        font-size: 1.0rem;
+        text-align: center;
+    }
+    .header-logo {
+        height: 60px;
+        margin-left: var(--spacing-s);
+    }
+}
+/*Móvil Pequeño*/
+@media (width <= 400px) {
+    .app-header {
+        padding: 0;
+    }
+    .header-content {
+        padding: 0 var(--spacing-xs);
     }
     .header-title {
         font-size: 0.8rem;
+        flex-grow: 1;
+        text-align: center;
     }
     .header-logo {
         height: 40px;
+        margin-left: var(--spacing-xs);
     }
 }

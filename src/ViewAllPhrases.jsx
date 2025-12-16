@@ -5,7 +5,7 @@ const ViewAllPhrases = () => {
     return (
         <main className="view-all-phrases-page">
             <div className="view-all-phrases-container">
-                <h3 className="view-all-phrases-title">Empowering Phrases Collection</h3>
+                <h3 className="view-all-phrases-title">Galery</h3>
                 <section className="view-all-phrases-gallery">
                     <table className="view-all-phrases-table">
                         <thead>
