@@ -7,19 +7,14 @@ const NewPhraseForm = () => {
   const [author, setAuthor] = useState('');
   const [image, setImage] = useState(null);
 
-<<<<<<< Updated upstream
-  const handleSubmit = (event) => {
-    event.preventDefault();
-=======
   const handleImageChange = (event) => {
     const file = event.target.files[0];
-    if (file && file.size < 2 * 1024 * 1024) { 
+    if (file && file.size < 2 * 1024 * 1024) { // Validación rápida
       setImage(file);
     } else {
       alert("Archivo demasiado grande");
     }
   };
->>>>>>> Stashed changes
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -85,6 +80,5 @@ const NewPhraseForm = () => {
     </main>
   );
 };
-
 
 export default NewPhraseForm;
