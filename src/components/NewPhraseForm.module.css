@@ -10,21 +10,17 @@
 
 
 .img {
-    width: 65%; 
-    min-height: 500px; 
+    width: 450px; 
+    height: 600px; 
     background-color: #f7f7f7; 
     border-radius: 8px; 
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 20px;
-    font-size: 14px;
-    color: #aaa;
+    padding: 20px
 }
 
 
 .container form {
-    width: 35%; 
+    width: 450px;
+    height: 600px; 
     display: flex;
     flex-direction: column;
     padding-left: 30px;
@@ -40,7 +36,6 @@
     margin-bottom: 20px;
 }
 
-
 .quoteMark {
     position: absolute;
     top: 15px;
@@ -51,18 +46,21 @@
     font-family: serif; 
 }
 
+
 .phrasePanel textarea {
-    width: 100%;
+    width: 350px;
+    height: 450;
     border: none;
     background: transparent;
     font-size: 1.25rem; 
     font-family: inherit;
     color: #4a4a4a;
     resize: none; 
-    padding: 20px 0 0 0; 
+    padding: 30px;
     outline: none; 
     text-align: center;
-    min-height: 120px;
+    margin: 50px auto;
+    
 }
 
 
@@ -90,9 +88,11 @@
     padding: 5px 0;
     width: 80%; 
 }
+
 .authorContainer input::placeholder {
     color: #aaa;
     font-style: italic;
+    
 }
 
 
@@ -102,29 +102,29 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin:20px auto;
+  
 }
 
 .footer p {
     font-size: 0.85rem;
-    color: #555;
+    color:#393939;
     line-height: 1.4;
     max-width: 80%;
     margin: 0;
+}
    
-
-.verifyButton {
-    background-color: #e0f7fa; 
-    color: #90d8f0; 
-    font-size: 2rem;
-    padding: 5px;
+.footer button { 
+    border-radius:50%;
+    background-color:#EFC3E6; 
+    padding: 15px;
     border: 2px solid #e0f7fa;
     line-height: 0.8;
     cursor: pointer;
-    transition: all 0.2s;
-}
+  
+} 
 
-.checkIcon {
-    color: #c0a8e3; 
-}
-
+.footer button img {
+  width: 30px;
+  height: 30px;
 }
