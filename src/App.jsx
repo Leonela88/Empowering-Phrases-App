@@ -10,15 +10,18 @@ import ViewAllPhrases from './components/View-All-Phrases/ViewAllPhrases'
 function App() {
   return (
     <div className="App">
-      <Header/>
-        {<ViewPhrases></ViewPhrases>}
-        {/* {< NewPhraseForm></NewPhraseForm>} */}
+      <Header></Header>
+      <main className="app-main">
+        {/* <ViewPhrases></ViewPhrases> */}
+        {/* <ViewAllPhrases/> */}
+        < NewPhraseForm></NewPhraseForm>
         {/* <CreateReadActions></CreateReadActions> */}
         {/* <RemovePhrases></RemovePhrases> */}
-        {/* <ViewAllPhrases/> */}
-      <Footer/>
+      </main>
+      <Footer></Footer>
     </div>
-  );
+  )
+      
 }
 
 export default App;
