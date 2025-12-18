@@ -11,13 +11,11 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <main className="app-main">
-        {/* <ViewPhrases></ViewPhrases> */}
+        <ViewPhrases></ViewPhrases>
         {/* <ViewAllPhrases/> */}
-        < NewPhraseForm></NewPhraseForm>
+        {/* < NewPhraseForm></NewPhraseForm> */}
         {/* <CreateReadActions></CreateReadActions> */}
         {/* <RemovePhrases></RemovePhrases> */}
-      </main>
       <Footer></Footer>
     </div>
   )

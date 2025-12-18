@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './EmpoweringPhraseEditor.css'; 
+import { useState } from 'react';
+// import "../Remove-Phrases/RemovingPhrases.css"
 
 
 function EmpowerPhraseEditor() {
@@ -7,9 +7,9 @@ function EmpowerPhraseEditor() {
   const INITIAL_PHRASE = "I am my own sanctuary and I can be reborn as many times as I choose throughout my life";
   const DEFAULT_PLACEHOLDER = "As long as you live, there's something new everyday.";
 
-    const [phrase, setPhrase] = useState(INITIAL_PHRASE);
+  const [phrase, setPhrase] = useState(INITIAL_PHRASE);
 
-    const handlePhraseChange = (event) => {
+  const handlePhraseChange = (event) => {
     setPhrase(event.target.value);
   };
 
@@ -61,4 +61,4 @@ function EmpowerPhraseEditor() {
     </div>
   );
 }
-export default RemovingPhrases;
+export default EmpowerPhraseEditor;
