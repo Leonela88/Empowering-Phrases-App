@@ -1,0 +1,49 @@
+import React, { useState } from 'react';
+import './EmpoweringPhrases.css';
+/**
+ JSX para visualizar, modificar y borrar frases de empoderamiento.
+ */
+function EmpowerPhraseEditor() {
+  // Estado inicial de la frase
+  const [phrase, setPhrase] = useState("I am my own sanctuary and I can be reborn as many times as I choose throughout my life");
+  
+  const handlePhraseChange = (event) => {
+    setPhrase(event.target.value);
+  };
+  
+  const handleClear = () => {
+    setPhrase('');
+  };
+  return (
+    <div className="phrase-editor-container">
+      {/* <h2>Editor de Frases de Empoderamiento</h2> */}
+      {/* :a: Área de Visualización */}
+      <div className="current-phrase-display">
+        <p className="empower-phrase">
+          {phrase ||"As long as you live. there's something new everyday."}
+        </p>
+      </div>
+      <hr className="separator" />
+       :b: Área de Modificación
+      <textarea
+        className="phrase-input"
+        value={phrase}
+        onChange={handlePhraseChange}
+        rows="4"
+        cols="50"
+        placeholder="Modifica tu frase..."
+      />
+      :chincheta:
+      <div className="controls">
+        <button
+          className="clear-button"
+          onClick={handleClear}
+          disabled={!phrase}
+        >
+          :x: Borrar Frase
+        </button>
+      </div>
+    </div>
+  );
+}
+export default EmpowerPhraseEditor;
