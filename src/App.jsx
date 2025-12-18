@@ -12,10 +12,10 @@ function App() {
     <div className="App">
       <Header></Header>
       <main className="app-main">
-        <ViewPhrases></ViewPhrases>
+        {/* <ViewPhrases></ViewPhrases> */}
         < NewPhraseForm></NewPhraseForm>
         {/* <CreateReadActions></CreateReadActions> */}
-        <RemovePhrases></RemovePhrases>
+        {/* <RemovePhrases></RemovePhrases> */}
       </main>
       <Footer></Footer>
     </div>
