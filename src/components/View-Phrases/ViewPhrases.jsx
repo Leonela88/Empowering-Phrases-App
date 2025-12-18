@@ -60,21 +60,23 @@ const ViewPhrases = () => {
     <main className="viewContainer">
       <img src={current.photo} alt={current.name} className="viewPhoto" />
       <div className="rightFrame">
-        <div>
-          {isEditing && (
-          <div className="editActions">
-          <button
-          onClick={() => {
-          updatePhrase({phrase: draftPhrase,name: draftAuthor});setIsEditing(false);}}> Save</button>
-          <button onClick={() => setIsEditing(false)}>Cancel</button>
-        </div>
-        )}
-        </div>
         <div className="carousel">
           <button className="viewButtons" onClick={ShowPrevious} onKeyDown={PressToPrevious}>&#060;
           </button>
           <div key={current.phrase} className="viewInfo" id="box2" style={{"--bg-image": `url(${current.photo})` }}>
-            <img src="./quotes.png" alt="quote icon" className="quoteIcon"></img>
+            <div className="quoteAndEdit">
+              <img src="./quotes.png" alt="quote icon" className="quoteIcon"></img>
+              <div> 
+              {isEditing && (
+                <div className="editActions">
+                <button className="saveButton"
+                onClick={() => {
+                updatePhrase({phrase: draftPhrase,name: draftAuthor});setIsEditing(false);}}> Save</button>
+                <button className="cancelButton" onClick={() => setIsEditing(false)}>Cancel</button>
+                </div>
+              )}
+              </div>
+            </div>
             <div className="fitPhrase">
               {isEditing ? (
                 <textarea
