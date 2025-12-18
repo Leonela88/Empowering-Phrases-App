@@ -128,3 +128,70 @@
   width: 30px;
   height: 30px;
 }
+
+
+@media (width <= 576px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px; 
+    }
+
+    .container form {
+        order: 1; 
+        width: 100%;
+        padding: 0;
+    }
+
+    .img {
+        order: 2;
+        width: 100%;
+        min-height: 180px;
+        max-height: 250px;
+    }
+
+
+    .phrasePanel {
+        padding: 20px;
+        font-size: 0.9rem; 
+    }
+}
+    @media (width <= 576px) {
+    .container {
+        display: flex;
+        flex-direction: column; 
+        padding: 10px;
+    }
+
+   
+    .img {
+        display: none;
+    }
+
+    .container form {
+        width: 100%;
+        padding: 0;
+    }
+
+    .phrasePanel {
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .phrasePanel textarea {
+        font-size: 1.1rem; 
+        min-height: 120px;
+    }
+
+    .footer {
+        flex-direction: column; 
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer p {
+        max-width: 100%; 
+    }
+}
+
