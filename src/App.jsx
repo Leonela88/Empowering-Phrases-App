@@ -10,7 +10,7 @@ function App() {
       <Outlet/>
       <Footer/>
     </div>
-  );
+  )
 }
 
 export default App;

@@ -10,21 +10,17 @@
 
 
 .img {
-    width: 65%; 
-    min-height: 500px; 
+    width: 450px; 
+    height: 600px; 
     background-color: #f7f7f7; 
     border-radius: 8px; 
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 20px;
-    font-size: 14px;
-    color: #aaa;
+    padding: 20px
 }
 
 
 .container form {
-    width: 35%; 
+    width: 450px;
+    height: 600px; 
     display: flex;
     flex-direction: column;
     padding-left: 30px;
@@ -40,7 +36,6 @@
     margin-bottom: 20px;
 }
 
-
 .quoteMark {
     position: absolute;
     top: 15px;
@@ -51,18 +46,21 @@
     font-family: serif; 
 }
 
+
 .phrasePanel textarea {
-    width: 100%;
+    width: 350px;
+    height: 450;
     border: none;
     background: transparent;
     font-size: 1.25rem; 
     font-family: inherit;
     color: #4a4a4a;
     resize: none; 
-    padding: 20px 0 0 0; 
+    padding: 30px;
     outline: none; 
     text-align: center;
-    min-height: 120px;
+    margin: 50px auto;
+    
 }
 
 
@@ -90,41 +88,110 @@
     padding: 5px 0;
     width: 80%; 
 }
+
 .authorContainer input::placeholder {
     color: #aaa;
     font-style: italic;
+    
 }
 
 
 
 .footer {
-    padding-top: 30px;
+    padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin:10px auto;
+  
 }
 
 .footer p {
     font-size: 0.85rem;
-    color: #555;
+    color:#393939;
     line-height: 1.4;
-    max-width: 80%;
+    /* max-width: 80%; */
     margin: 0;
+}
    
-
-.verifyButton {
-    background-color: #e0f7fa; 
-    color: #90d8f0; 
-    font-size: 2rem;
-    padding: 5px;
+.footer button { 
+    border-radius:50%;
+    background-color:#EFC3E6; 
+    padding: 15px;
     border: 2px solid #e0f7fa;
     line-height: 0.8;
     cursor: pointer;
-    transition: all 0.2s;
+  
+} 
+
+.footer button img {
+  width: 30px;
+  height: 30px;
 }
 
-.checkIcon {
-    color: #c0a8e3; 
+
+@media (width <= 576px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px; 
+    }
+
+    .container form {
+        order: 1; 
+        width: 100%;
+        padding: 0;
+    }
+
+    .img {
+        order: 2;
+        width: 100%;
+        min-height: 180px;
+        max-height: 250px;
+    }
+
+
+    .phrasePanel {
+        padding: 20px;
+        font-size: 0.9rem; 
+    }
+}
+    @media (width <= 576px) {
+    .container {
+        display: flex;
+        flex-direction: column; 
+        padding: 10px;
+    }
+
+   
+    .img {
+        display: none;
+    }
+
+    .container form {
+        width: 100%;
+        padding: 0;
+    }
+
+    .phrasePanel {
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .phrasePanel textarea {
+        font-size: 1.1rem; 
+        min-height: 120px;
+    }
+
+    .footer {
+        flex-direction: column; 
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer p {
+        max-width: 100%; 
+    }
 }
 
-}
