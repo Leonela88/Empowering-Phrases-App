@@ -1,0 +1,56 @@
+.app-footer {
+    background-color: rgba(var(--rgb-secondary), 1);
+    color: rgba(var(--rgb-primary), 1);
+    text-align: center;
+    padding: var(--spacing-s) 0;
+    width: 100%;
+    line-height: 1.0;
+    margin: 0;
+    display: block;
+
+}
+
+.footer-text {
+    margin: 0;
+    padding: 0;
+    line-height: 1.0;
+    font-size: 0.9rem;
+}
+
+/* Media Query, rango base Desktop Estándar >=993 */
+/*Tablet Estándar*/
+@media (width <= 992px) {
+    .app-footer {
+        padding: var(--spacing-xs) 0;
+    }
+    .footer-text {
+        font-size: 0.85rem;
+    }
+}
+/*Tablet Pequeña / Móvil Horizontal*/
+@media (width <= 767px) and (width > 576px) {
+    .app-footer {
+        padding: var(--spacing-xs) 0;
+    }
+    .footer-text {
+        font-size: 0.8rem;
+    }
+}
+/*Móvil Estándar*/
+@media (width <= 576px) {
+    .app-footer {
+        padding: var(--spacing-xs) 0;
+    }
+    .footer-text {
+        font-size: 0.75rem;
+    }
+}
+/*Móvil Pequeño*/
+@media (width <= 400px) {
+    .app-footer {
+        padding: var(--spacing-xs) 0;
+    }
+    .footer-text {
+        font-size: 0.7rem;
+    }
+}

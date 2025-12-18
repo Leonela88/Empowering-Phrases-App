@@ -13,6 +13,7 @@ function App() {
       <Header></Header>
       <main className="app-main">
         {/* <ViewPhrases></ViewPhrases> */}
+        {/* <ViewAllPhrases/> */}
         < NewPhraseForm></NewPhraseForm>
         {/* <CreateReadActions></CreateReadActions> */}
         {/* <RemovePhrases></RemovePhrases> */}
@@ -20,6 +21,7 @@ function App() {
       <Footer></Footer>
     </div>
   )
+      
 }
 
-export default App
+export default App;

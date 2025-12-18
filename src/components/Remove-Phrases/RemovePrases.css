@@ -1,0 +1,133 @@
+.phrase-editor-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.current-phrase-display {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: #f9f4ff; 
+  border-left: 5px solid #8e44ad;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.empower-phrase {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #2c3e50;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.separator {
+  border: 0;
+  height: 1px;
+  background: #eee;
+  margin: 2rem 0;
+}
+
+.phrase-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical; 
+  transition: border-color 0.3s ease;
+  box-sizing: border-box; 
+  margin-bottom: 1.5rem;
+}
+
+.phrase-input:focus {
+  outline: none;
+  border-color: #8e44ad;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.clear-button {
+  background-color: white;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.clear-button:hover:not(:disabled) {
+  background-color: #c0392b;
+}
+
+.clear-button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.clear-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+/* Asegura que los botones estén alineados y tengan espacio entre ellos */
+.controls {
+  display: flex;
+  gap: 15px; /* Espacio entre botones */
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Estilo común para ambos botones */
+.clear-button, .reset-button {
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Color específico para Borrar (Rojo) */
+.clear-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.clear-button:hover:not(:disabled) {
+  background-color: #c0392b;
+}
+
+/* Color específico para Restaurar (Azul) */
+.reset-button {
+  background-color: #3498db;
+  color: white;
+}
+
+.reset-button:hover {
+  background-color: #2980b9;
+}
+
+/* Estado deshabilitado */
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  opacity: 0.6;
+}

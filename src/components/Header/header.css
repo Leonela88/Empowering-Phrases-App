@@ -1,0 +1,104 @@
+.app-header {
+    background-color: rgba(var(--rgb-secondary), 1);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-l);
+}
+
+.header-title {
+    color: rgba(var(--rgb-primary), 1);
+    font-size: 2.2rem;
+    flex-grow: 1;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header-logo {
+    height: 120px;
+    width: auto;
+    flex-shrink: 0;
+    margin-left: var(--spacing-l);
+}
+
+/* Media Query, rango base Desktop Estándar >=993 */
+/*Tablet Estándar*/
+@media (width <= 992px) {
+    .app-header {
+        padding: 0;
+    }
+    .header-content {
+        padding: 0 var(--spacing-m);
+    }
+    .header-title {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .header-logo {
+        height: 90px;
+        margin-left: var(--spacing-m);
+    }
+}
+/*Tablet Pequeña / Móvil Horizontal*/
+@media (width <= 767px) and (width > 576px) {
+    .app-header {
+        padding:0;
+    }
+    .header-content {
+        padding: 0 var(--spacing-m);
+    }
+    .header-title {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .header-logo {
+        height: 90px;
+        margin-left: var(--spacing-m);
+    }
+}
+/*Móvil Estándar*/
+@media (width <= 576px) {
+    .app-header {
+        padding: 0;
+    }
+    .header-content {
+        padding: 0 var(--spacing-s);
+    }
+    .header-title {
+        font-size: 1.0rem;
+        text-align: center;
+    }
+    .header-logo {
+        height: 60px;
+        margin-left: var(--spacing-s);
+    }
+}
+/*Móvil Pequeño*/
+@media (width <= 400px) {
+    .app-header {
+        padding: 0;
+    }
+    .header-content {
+        padding: 0 var(--spacing-xs);
+    }
+    .header-title {
+        font-size: 0.8rem;
+        flex-grow: 1;
+        text-align: center;
+    }
+    .header-logo {
+        height: 40px;
+        margin-left: var(--spacing-xs);
+    }
+}
