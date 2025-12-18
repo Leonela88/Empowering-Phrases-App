@@ -1,1 +1,32 @@
-/* index style */
+/* global style */
+
+:root{
+    --color-background: #FFFFFF;
+    --rgb-primary: 156, 137, 184; /*#9C89B8*/
+    --rgb-secondary: 240, 230, 239; /*#F0E6EF*/
+    --rgb-accent: 239, 195, 230; /*#EFC3E6*/
+    --rgb-text: 57,57,57; /*#393939*/
+
+    --font-family-primary:'Inter';
+    --font-family-quotes: 'Merriweather';
+    
+    --spacing-xxs: 2px;
+    --spacing-xs: 4px;
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 48px;
+    --border-radius-default: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color-background);
+    font-family: var(--font-family-primary);
+    color: rgba(var(--rgb-text), 1);
+}

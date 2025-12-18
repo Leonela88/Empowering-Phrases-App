@@ -1,0 +1,53 @@
+.create-read-actions-container {
+    padding: var(--spacing-l) var(--spacing-m);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.controls-buttons-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-s);
+}
+
+.controls-description {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: rgba(var(--rgb-text), 0.8);
+    margin: 0;
+    padding-right: var(--spacing-xs);
+}
+
+.control-button {
+    background-color:rgba(var(--rgb-accent),1);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-icon {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+    .controls-buttons-wrapper {
+        flex-direction: column;
+        gap: var(--spacing-m);
+        align-items: center;
+    }
+}
