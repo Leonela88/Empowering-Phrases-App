@@ -1,6 +1,13 @@
+<<<<<<< HEAD:src/components/View Phrases/ViewPhrases.jsx
+import { useState } from "react"
+import { phrases } from "../../array/Array"
+import "../src/ViewPhrases.css"
+
+=======
 import { useState } from "react";
 import { phrases } from "./array/Array";
 import "../src/ViewPhrases.css";
+>>>>>>> 9bfd68cedc4d0d1046279dbac687b71355051ea5:src/ViewPhrases.jsx
 
 const ViewPhrases = () => {
   const [index, setIndex] = useState(0);
