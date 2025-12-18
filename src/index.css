@@ -29,5 +29,4 @@ body{
     background-color: var(--color-background);
     font-family: var(--font-family-primary);
     color: rgba(var(--rgb-text), 1);
-    min-height: 100vh;
 }

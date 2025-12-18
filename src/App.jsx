@@ -11,14 +11,14 @@ function App() {
   return (
     <div className="App">
       <Header/>
-        {/* <ViewPhrases></ViewPhrases> */}
+        {<ViewPhrases></ViewPhrases>}
         {/* {< NewPhraseForm></NewPhraseForm>} */}
         {/* <CreateReadActions></CreateReadActions> */}
         {/* <RemovePhrases></RemovePhrases> */}
-        <ViewAllPhrases/>
+        {/* <ViewAllPhrases/> */}
       <Footer/>
     </div>
   );
 }
 
-export default App
+export default App;
