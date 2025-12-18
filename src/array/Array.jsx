@@ -10,12 +10,6 @@ const phrases = [
     phrase : "I am my own sanctuary and I can be reborn as many times as I choose throughout my life.",
     photo : "./photos/Lady-Gaga.png"
     },
-    
-    {name : "Ruth Bader Ginsburg",
-     role : "American Lawyer and Jurist",
-     phrase : "As women achieve power, the barriers will fall. As society sees what women can do, as women see what women can do, there will be more women out there doing things, and we'll all be better off for it.",
-     photo : "./photos/Ruth-Bader-Ginsburg.png"
-    },
 
     {name : "Michelle Obama", 
      role : "American Attorney, Author & Former First Lady of the United States", 
@@ -33,12 +27,6 @@ const phrases = [
      role : "Fashion Designer & Businesswoman",
      phrase : "A girl should be two things: Who and what she wants.",
          photo : "./photos/Coco-Chanel.png"
-    },
-
-    {name : "Dolly Parton",
-     role : "Singer-songwriter & Musician",
-     phrase : "As long as you live. there's something new everyday.",
-         photo : "./photos/Dolly-Parton.png"
     },
 
     {name : "Judy Garland", 
@@ -101,28 +89,10 @@ const phrases = [
          photo : "./photos/Audre-Lorde.png"
     },
 
-    {name : "Rupi Kaur", 
-     role : "Poet, Illustrator, Photographer & Author",
-     phrase : "What's the greatest lesson a woman should learn? That since day one, she's already had everything she needs within herself. It's the world that convinced her she did not.",
-         photo : "./photos/Rupi-Kaur.png"
-    },
-
-    {name : "June Sarpong",
-     role : "Television Presenter & Executive",
-     phrase : "Believe in yourself and be proud of who you are. Don't let anyone tell you differently. There is beauty in everyone and no one should stop you from growing into a confident and strong young person.",
-         photo : "./photos/June-Sarpong.webp"
-    },
-
     {name : "Isabel Allende",
      role : "Author",
      phrase : "I can promise you that women working together - linked, informed, and educated - can bring peace and prosperity to this forsaken planet.",
          photo : "./photos/Isabel-Allende.png"
-    },
-
-    {name : "Beanie Feldstein",
-     role : "Actress", 
-     phrase : "Take the wisdoms of the women in this world and keep them at your side, always.",
-         photo : "./photos/Beanie-Feldstein.png"
     },
 
     {name : "Alex Elle",
@@ -131,28 +101,10 @@ const phrases = [
          photo : "./photos/Alex-Elle.png"
     },
 
-    {name : "Alaa Murabit", 
-     role : "Physician", 
-     phrase : "I will always be the girl who believed she could make it to the moon, in a world that still debates whether girls should have an education and whether women should have reproductive rights.",
-         photo : "./photos/Alaa-Murabit.png"
-    },
-
     {name : "G.D. Anderson", 
      role : "Writer & Founder of The Cova Project",
      phrase : "Feminism isn't about making women strong. Women are already strong. It's about changing the way the world perceives that strength.",
          photo : "./photos/G.D.-Anderson.png"
-    },
-
-    {name : "Jameela Jamil", 
-     role : "Actress & Activist",
-     phrase : "Do not ever sell yourself short.",
-         photo : "./photos/Jameela-Jamil.png"
-    },
-
-    {name : "Maya Angelou", 
-     role : "Memoirist, Poet & Civil Rights Activist",
-     phrase : "I am grateful to be a woman. I must have done something great in another life.",
-         photo : "./photos/Maya-Angelou.png"
     },
 
     {name : "Jane Goodall", 
@@ -171,12 +123,6 @@ const phrases = [
      role : "Actress",
      phrase : "I'd rather regret the things I've done than regret the things I haven't done.",
          photo : "./photos/Lucille-Ball.png"
-    },
-
-    {name : "Matilda Joslyn Gage", 
-     role : "Writer & Activist",
-     phrase : "The women of today are the thoughts of their mothers and grandmothers, embodied and made alive. They are active, capable, determined and bound to win. They have one-thousand generations back of them...Millions of women dead and gone are speaking through us today.",
-         photo : "./photos/Matilda-Joslyn-Gage.png"
     },
 
     {name : "Arianna Huffington", 
@@ -209,18 +155,6 @@ const phrases = [
         photo : "./photos/Beverly-Sills.png"
     },
 
-    {name : "Mindy Kaling", 
-     role : "Actress, Screenwriter & Producer",
-     phrase : "If you don't see a clear path for what you want, sometimes you have to make it yourself.",
-         photo : "./photos/Mindy-Kaling.png"
-    },
-
-    {name : "Dame Jessica Ennis-Hill",
-     role : "Track & Field Athlete",
-     phrase : "The only one who can tell you 'you can't win' is you, and you don't have to listen.",
-         photo : "./photos/Dame-Jessica-Ennis-Hill.png"
-    },
-
     {name : "Margaret Fuller", 
      role : "Journalist, Editor, Critic, Translator & Activist",
      phrase : "If you have knowledge, let others light their candles in it.",
@@ -233,22 +167,10 @@ const phrases = [
          photo : "./photos/Marilyn-Monroe.png"
     },
 
-    {name : "Oprah Winfrey",
-     role : "Talk Show Host, Television Producer, Actress & Author",
-     phrase : "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.",
-         photo : "./photos/Oprah-Winfrey.png"
-    },
-
     {name : "Angela Yee", 
      role : "Radio Personality",
      phrase : "I can encourage the women who are striving to get their footing in the world to keep pushing and to express themselves.",
-         photo : "./photos/Angela-Yee.webp"
-    },
-
-    {name : "Blake Lively", 
-     role : "Actress",
-     phrase : "The most beautiful thing a woman can wear is confidence.",
-         photo : "./photos/Blake-Lively.png"
+         photo : "./photos/Angela-Yee.png"
     },
 
     {name : "Carolina Herrera", 
@@ -267,18 +189,6 @@ const phrases = [
      role : "Activist",
      phrase : "I have learned you are never too small to make a difference.",
          photo : "./photos/Greta-Thunberg.png"
-    },
-
-    {name : "Misty Copeland", 
-     role : "Ballet Dancer",
-     phrase : "Be strong, be fearless, be beautiful. And believe that anything is possible when you have the right people there to support you.",
-         photo : "./photos/Misty-Copeland.png"
-    },
-
-    {name : "Nikita Gill", 
-     role : "Poet, Playwright, Writer & Illustrator",
-     phrase : "Never ever mistake her silence for weakness. Remember that sometimes the air stills before the onset of a hurricane.",
-         photo : "./photos/Nikita-Gill.png"
     },
 
     {name : "Amani Al-Khatahtbeh", 
