@@ -1,10 +1,10 @@
 import './App.css'
-import Header from './Header'
-import Footer from './Footer'
-import ViewPhrases from './ViewPhrases'
-import NewPhraseForm from './components/NewPhraseForm'
-import CreateReadActions from './CreateReadActions'
-import RemovePhrases from './RemovePhrases'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import ViewPhrases from './components/View Phrases/ViewPhrases'
+import NewPhraseForm from './components/New Phrase Form/New Phrase Form/NewPhraseForm'
+import CreateReadActions from './components/Create Read Actions/CreateReadActions'
+import RemovePhrases from './components/Remove Phrases/RemovePhrases'
 import ViewAllPhrases from './ViewAllPhrases'
 
 function App() {

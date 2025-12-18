@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { phrases } from "./array/Array"
+import { phrases } from "../../array/Array"
 import "../src/ViewPhrases.css"
 
 
