@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { phrases } from "./array/Array";
-import "../src/ViewPhrases.css";
+import { phrases } from "../../array/Array.jsx"
+import "../src/components/ViewPhrases.css";
 
 const ViewPhrases = () => {
   const [index, setIndex] = useState(0);
