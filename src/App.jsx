@@ -9,15 +9,11 @@ import ViewAllPhrases from './components/View-All-Phrases/ViewAllPhrases'
 
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
-        <ViewPhrases></ViewPhrases>
-        {/* <ViewAllPhrases/> */}
-        {/* < NewPhraseForm></NewPhraseForm> */}
-        {/* <CreateReadActions></CreateReadActions> */}
-        {/* <RemovePhrases></RemovePhrases> */}
-      <Footer></Footer>
-    </div>
+    <>
+      <Header/>
+      <Outlet/>
+      <Footer/>
+    </>
   );
 }
 
