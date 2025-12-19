@@ -18,8 +18,7 @@ function App() {
         {/* <RemovePhrases></RemovePhrases> */}
       <Footer></Footer>
     </div>
-  )
-      
+  );
 }
 
 export default App;
