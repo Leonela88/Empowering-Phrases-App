@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { phrases as initialPhrases } from "../../array/Array.jsx"
+import { useNavigate } from "react-router";
 // import EmpowerPhraseEditor from "../Remove-Phrases/RemovePhrases.jsx"
 // import EmpowerPhraseModify from "../Modify-Phrases/modifyPhrases.jsx";
 import NewPhraseForm from "../New-Phrases-Form/NewPhraseForm.jsx"
@@ -28,6 +29,8 @@ const ViewPhrases = () => {
   setDraftAuthor(current.name);
   setIsEditing(true);
 };
+
+  const navigate = useNavigate();
 
   const ShowNext = () => {
     setIndex((prevIndex) =>
@@ -116,13 +119,13 @@ const ViewPhrases = () => {
         <div className="otherButtons">
           <div className="viewCollaborate">
             <p>Collaborate :<br></br> Add your phrase</p>
-            <button className="viewAdd" onClick={NewPhraseForm}>
+            <button className="viewAdd" onClick={() => navigate("/form")}>
               <img src="../public/images/add.png" alt="add icon" id="viewPlus" />
             </button>
           </div>
           <div className="viewExplore">
             <p>Explore:<br></br> View full Gallery</p>
-            <button className="viewGallery" onClick={ViewAllPhrases}>
+            <button className="viewGallery" onClick={() => navigate("/viewAll")}>
               <img src="../public/images/book.png" alt="book icon" id="viewList" />
             </button>
           </div>
