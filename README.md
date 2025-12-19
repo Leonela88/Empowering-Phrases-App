@@ -31,7 +31,7 @@ Para ejecutar este proyecto en local, sigue estos pasos:
 
 1. **Clonar el repositorio**:
    ```bash
-   git clone <url-del-repositorio>
+   git clone git@github.com:Leonela88/Empowering-Phrases-App.git
 2. **Instalar dependencias:**:
    ```bash
    npm install
