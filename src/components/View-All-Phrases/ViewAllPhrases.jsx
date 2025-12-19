@@ -1,5 +1,5 @@
 import './viewAllPhrases.css'
-import { phrases } from '../src/array/Array.jsx'
+import { phrases } from "../../array/Array.jsx"
 import { useState } from 'react';
 
 const ViewAllPhrases = () => {

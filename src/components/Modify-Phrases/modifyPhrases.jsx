@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './EmpowerPhraseEditor.css';
+// import './EmpowerPhraseEditor.css';
 
-function EmpowerPhraseEditor() {
+function EmpowerPhraseModify() {
   const INITIAL_PHRASE = "I am my own sanctuary and I can be reborn as many times as I choose throughout my life";
   
   const [phrase, setPhrase] = useState(INITIAL_PHRASE);
@@ -59,4 +59,4 @@ function EmpowerPhraseEditor() {
   );
 }
 
-export default EmpowerPhraseEditor;
+export default EmpowerPhraseModify;
