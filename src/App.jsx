@@ -9,7 +9,7 @@ import ViewAllPhrases from './ViewAllPhrases'
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header/>
         {<ViewPhrases></ViewPhrases>}
         {/* {< NewPhraseForm></NewPhraseForm>} */}
@@ -17,7 +17,7 @@ function App() {
         {/* <RemovePhrases></RemovePhrases> */}
         {/* <ViewAllPhrases/> */}
       <Footer/>
-    </div>
+    </>
   );
 }
 
