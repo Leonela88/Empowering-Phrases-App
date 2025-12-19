@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { phrases as initialPhrases } from "../../array/Array.jsx"
 // import EmpowerPhraseEditor from "../Remove-Phrases/RemovePhrases.jsx"
-import EmpowerPhraseModify from "../Modify-Phrases/modifyPhrases.jsx";
+// import EmpowerPhraseModify from "../Modify-Phrases/modifyPhrases.jsx";
 import NewPhraseForm from "../New-Phrases-Form/NewPhraseForm.jsx"
 import ViewAllPhrases from "../View-All-Phrases/ViewAllPhrases.jsx"
 import useDeletePhrase from "../Remove-Phrases/DeletePhrases.jsx"
 import useUpdatePhrase from "../Modify-Phrases/updatePhrases.jsx"
+// import CreateReadActions from "../Create-Read-Actions/CreateReadActions.jsx";
 import "./ViewPhrases.css"
 
 
@@ -111,6 +112,7 @@ const ViewPhrases = () => {
           <button className="viewButtons" onClick={ShowNext} onKeyDown={PressToNext}>&#062;
           </button>
         </div>
+        {/* <CreateReadActions></CreateReadActions> */}
         <div className="otherButtons">
           <div className="viewCollaborate">
             <p>Collaborate :<br></br> Add your phrase</p>

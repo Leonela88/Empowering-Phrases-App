@@ -14,7 +14,6 @@ const CreateReadActions = () =>{
                         />
                     </button>
                 </div>
-
                 <div className="control-group view-control">
                     <p className="controls-description">{viewText}</p>
                     <button className="control-button button-view" title="View the complete phrase gallery">
