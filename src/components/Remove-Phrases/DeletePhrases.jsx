@@ -12,7 +12,10 @@ return useCallback(() => {
         setIndex(Math.max(updated.length - 1, 0));
     }
 
+    alert ("This phrase has now been deleted") 
+
     return updated;
+
     });
 }, [setPhrases, index, setIndex]);
 }
